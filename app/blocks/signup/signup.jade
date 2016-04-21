@@ -1,0 +1,10 @@
+include ../or/or
+
+mixin signup()
+	+b.signup&attributes(attributes)
+		+e.signupwrapper
+			+e('button').btn._signup(type="input") Sign up with Email
+			+or()
+			+e('button').btn._twitter(type="input") Twitter
+			+e('button').btn._facebook(type="input") Facebook
+			+e('button').btn._linkedin(type="input") LinkedIn

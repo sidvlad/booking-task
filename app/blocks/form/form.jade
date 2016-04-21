@@ -1,0 +1,13 @@
+mixin form()
+	+b.form&attributes(attributes)
+		+e.name
+			+e('label').label(for="name")
+			+e('input').input(id="name" name="name" placeholder="Name")
+		+e.name
+			+e('label').label(for="email")
+			+e('input').input(id="email" name="email" placeholder="Email")
+		+e.name
+			+e('label').label(for="password")
+			+e('input').input(id="password" name="password" placeholder="Password")
+
+		+e('button').btn(type="input") Sing Up

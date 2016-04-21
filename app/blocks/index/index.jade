@@ -1,0 +1,9 @@
+include ../header/header
+include ../form/form
+include ../notices/notices
+
+mixin index()
+	+b.index&attributes(attributes)
+		+header()
+		+form()
+		+notices()

@@ -1,0 +1,15 @@
+include ../header/header
+include ../photo/photo
+include ../travelscore/travelscore
+include ../risetravelscore/risetravelscore
+include ../paycover/paycover
+include ../or/or
+
+mixin profile()
+	+b.profile&attributes(attributes)
+		+headerprofile()
+		+photo()
+		+travelscore()
+		+risetravelscore()
+		+or()
+		+paycover()
