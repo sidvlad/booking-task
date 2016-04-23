@@ -1,4 +1,15 @@
 .notices
 	display block
-	margin-top 20px
 	text-align center
+
+	@media screen and (max-width: 639px)
+		margin-top 20px
+
+	@media screen and (min-width: 640px)
+		margin-top 40px
+		font-size 28px
+
+	&:hover
+		color #fff
+		cursor pointer
+		transition all .1s ease-in-out

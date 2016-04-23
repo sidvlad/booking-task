@@ -12,13 +12,18 @@
 	&__signupwrapper
 		display block
 		margin 0 auto
-		padding 25px
-		width 320px
+
+		@media screen and (max-width: 639px)
+			padding 25px
+			width 320px
+
+		@media screen and (min-width: 640px)
+			width 640px
+			padding 50px
 
 	&__btn
-		width 270px
-		height 50px
-		margin-top 20px
+		display block
+		margin 0 auto
 		text-transform uppercase
 		color #ffffff
 		background-color transparent
@@ -27,6 +32,17 @@
 		outline none
 		transition all .1s ease-in-out
 
+		@media screen and (max-width: 639px)
+			width 270px
+			height 50px
+			margin-top 20px
+
+		@media screen and (min-width: 640px)
+			width 540px
+			height 95px
+			margin-top 40px
+			font-size 32px
+
 		&_signup
 			border 1px solid #ffffff
 
@@ -34,14 +50,22 @@
 				background-color #7216ce
 
 		&_twitter
+			margin-top 20px
 			background-color #69ccef
 			background-image url(../img/icon-twitter.svg)
-			background-size 40px 40px
 			background-repeat no-repeat
-			background-position 15px center
 			border none
 			text-transform  none
+			margin-top 20px
 			fill #fff
+
+			@media screen and (max-width: 639px)
+				background-size 40px 40px
+				background-position 15px center
+
+			@media screen and (min-width: 640px)
+				background-size 70px 70px
+				background-position 25px center
 
 			&:hover
 				background-color #83d8f6
@@ -49,12 +73,19 @@
 		&_facebook
 			background-color #527dbe
 			background-image url(../img/icon-facebook.svg)
-			background-size 30px 30px
 			background-repeat no-repeat
-			background-position 15px center
 			border none
 			text-transform  none
+			margin-top 20px
 			fill #fff
+
+			@media screen and (max-width: 639px)
+				background-size 30px 30px
+				background-position 15px center
+
+			@media screen and (min-width: 640px)
+				background-size 60px 60px
+				background-position 25px center
 
 			&:hover
 				background-color #6e95d1
@@ -62,12 +93,19 @@
 		&_linkedin
 			background-color #1276b1
 			background-image url(../img/icon-linkedin.svg)
-			background-size 40px 40px
 			background-repeat no-repeat
-			background-position 15px center
 			border none
 			text-transform  none
+			margin-top 20px
 			fill #fff
+
+			@media screen and (max-width: 639px)
+				background-size 40px 40px
+				background-position 15px center
+
+			@media screen and (min-width: 640px)
+				background-size 70px 70px
+				background-position 25px center
 
 			&:hover
 				background-color #208bca

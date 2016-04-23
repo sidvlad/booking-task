@@ -3,8 +3,14 @@
 	justify-content center
 
 	&__image
-		width 80px
-		height 80px
 		border 4px solid #ffffff
 		outline none
 		border-radius 100%
+
+		@media screen and (max-width: 639px)
+			width 80px
+			height 80px
+
+		@media screen and (min-width: 640px)
+			width 160px
+			height 160px
